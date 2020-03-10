@@ -11,12 +11,12 @@ import PlacePicker
 import GooglePlaces
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        PlacePicker.configure(googleMapsAPIKey: "", placesAPIKey: "")
+        PlacePicker.configure(googleMapsAPIKey: "AIzaSyCxqm9TVKxqrMF_upwnyxCvGmc8gPF81SI", placesAPIKey: "AIzaSyCxqm9TVKxqrMF_upwnyxCvGmc8gPF81SI")
     }
-
+    
     @IBAction func showPlacePicker(_ sender: Any) {
         let controller = PlacePicker.placePickerController()
         controller.delegate = self
